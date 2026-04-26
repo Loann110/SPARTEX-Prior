@@ -496,7 +496,7 @@ The example illustrates the complete inference output:
 - the SLIC superpixel decomposition
 - the generated target prior map
 
-![Example result on a homemade cloud dataset](attachment:Figure_4.png)
+![Example result on a homemade cloud dataset](https://github.com/Loann110/SPARTEX-Prior/blob/main/results/Figure_4.png)
 
 The prior map highlights image regions that are likely to belong to the target class. In this example, the framework produces a coarse but useful cloud prior map that can be used directly for classical segmentation or as an additional prior channel for a CNN / U-Net refinement stage.
 
@@ -509,9 +509,9 @@ The original dataset was extended with additional images, resulting in a larger 
 
 The figures below show two example results obtained on the enriched SBU shadow dataset:
 
-![Example result 1 on the enriched SBU shadow dataset](attachment:Figure_5.png)
+![Example result 1 on the enriched SBU shadow dataset](https://github.com/Loann110/SPARTEX-Prior/blob/main/results/Figure_5.png)
 
-![Example result 2 on the enriched SBU shadow dataset](attachment:Figure_2.png)
+![Example result 2 on the enriched SBU shadow dataset](https://github.com/Loann110/SPARTEX-Prior/blob/main/results/Figure_2.png)
 
 The generated prior maps show that the framework can learn meaningful shadow-related texture and color patterns using only classical computer vision features, superpixels, texton histograms, LAB color histograms, and an SVM classifier.
 
