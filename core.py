@@ -147,8 +147,8 @@ def extract_superpixel_feature(lab, sp_labels, sp_id, texton_map, n_bins_lab=21,
 def get_score(model, feat, output_mode="decision"):
     """
     output_mode:
-      - 'decision' : score brut du classifieur
-      - 'prob'     : vraie proba si modèle calibré, sinon pseudo-proba par sigmoid(score)
+      - 'decision' : raw score of the classifier
+      - 'prob'     : real probability if the model is calibrated, else pseudo-proba via sigmoid(score)
       - 'logit'    : logit
     """
     if output_mode == "decision":
@@ -175,7 +175,7 @@ def get_score(model, feat, output_mode="decision"):
             return float(model.decision_function(feat)[0])
 
     else:
-        raise ValueError("output_mode doit être 'decision', 'prob' ou 'logit'")
+        raise ValueError("output_mode must be 'decision', 'prob' or 'logit'")
     
 
 
